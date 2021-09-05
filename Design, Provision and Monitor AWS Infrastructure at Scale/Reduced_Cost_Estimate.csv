@@ -1,0 +1,15 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2,0,175.24,2102.88,USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (30 GB), Instance type (t3.large)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,175.68,2108.16,USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (30 GB), Instance type (c5.large)"
+My Estimate,US East (N. Virginia),,Amazon Aurora MySQL-Compatible,1040,4609,56348,USD,"Change records per statement (0.38), Nodes (2), Instance Type (db.t2.medium), Instance Family (General purpose), Pricing Model (Reserved), Lease Offering Term (3yr), Purchase Option (Partial Upfront), Storage amount (100 GB)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,400.5,4806,USD,Hosted Zones (1)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,667,8004,USD,"Working days per month (30), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Number of subnet associations (4)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,250.03,3000.36,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,104.03,1248.36,USD,"Number of Network Load Balancers (1), Average number of new TLS connections (1000 per second)"
+,,,,,,,,
+Total,,,,,6381.48,,,
+,,,,,,,,
+Changes:,,,,,,,,
+EC2 pricing strategy changed from on-demand to 3-year prepaid reserved instances for both web and application servers.,,,,,,,,
+RDS ricing strategy changed from on-demand to 3-year prepaid reserved instances,,,,,,,,
+Reduced RDS write and read per seconds,,,,,,,,

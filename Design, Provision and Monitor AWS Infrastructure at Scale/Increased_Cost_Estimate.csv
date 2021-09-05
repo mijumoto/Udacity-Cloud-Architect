@@ -1,0 +1,20 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2,0,350.48,4205.76,USD,"Operating system (Linux), Quantity (12), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (30 GB), Instance type (t3.large)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,351.36,4216.32,USD,"Operating system (Linux), Quantity (12), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (30 GB), Instance type (c5.large)"
+My Estimate,US East (N. Virginia),,Amazon Aurora MySQL-Compatible,1040,15804.28,190691.36,USD,"Change records per statement (0.38), Nodes (2), Instance Type (db.t2.medium), Instance Family (General purpose), Pricing Model (Reserved), Lease Offering Term (3yr), Purchase Option (Partial Upfront), Storage amount (100 GB)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,400.5,4806,USD,Hosted Zones (1)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,667,8004,USD,"Working days per month (30), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Number of subnet associations (4)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,1184.43,14213.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,542.03,6504.36,USD,"Number of Network Load Balancers (1), Average number of new TLS connections (1000 per second), Processed bytes per NLB for TCP (100 GB per hour)"
+,,,,,,,,
+,,,,Total,19300.08,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Changes:,,,,,,,,
+Doubled the number of EC2 instances,,,,,,,,
+Application Load Balancer - increased number of processed GB per month (EC2 and IP),,,,,,,,
+Network Load Balancer - increased number of processed GB per month (NLB for TCP),,,,,,,,
+Increased database write and reads to 15k per second,,,,,,,,
