@@ -6,8 +6,10 @@ My Estimate,US East (N. Virginia),,Amazon Route 53,0,400.5,4806,USD,Hosted Zones
 My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,667,8004,USD,"Working days per month (30), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Number of subnet associations (4)"
 My Estimate,US East (N. Virginia),,Application Load Balancer,0,250.03,3000.36,USD,Number of Application Load Balancers (1)
 My Estimate,US East (N. Virginia),,Network Load Balancer,0,104.03,1248.36,USD,"Number of Network Load Balancers (1), Average number of new TLS connections (1000 per second)"
+My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,"Number of EIPs per instance (1), Number of EC2 instances (24)"
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,78.93,947.16,USD,Number of NAT Gateways (1)
 ,,,,,,,,
-,,,,Total,8631.2,,,
+,,,,Total,8710.13,,,
 ,,,,,,,,
 Acknowledgement,,,,,,,,
 "* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
