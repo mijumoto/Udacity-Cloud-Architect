@@ -1,0 +1,34 @@
+FG_R00085: VPC security group rules should not permit ingress from '0.0.0.0/0' to TCP/UDP port 22 (SSH) [High]
+           https://docs.fugue.co/FG_R00085.html
+
+  [1]: AttackInstanceSG
+       in c3-app.yml:151:3
+
+  [2]: WebAppSG
+       in c3-app.yml:45:3
+
+Found 2 problems.
+
+(base) mijumoto@MacBook-Pro starter % regula run c3-app.yml
+
+FG_R00085: VPC security group rules should not permit ingress from '0.0.0.0/0' to TCP/UDP port 22 (SSH) [High]
+           https://docs.fugue.co/FG_R00085.html
+
+  [1]: WebAppSG
+       in c3-app.yml:45:3
+
+Found one problem.
+
+(base) mijumoto@MacBook-Pro starter % regula run c3-app.yml
+
+FG_R00085: VPC security group rules should not permit ingress from '0.0.0.0/0' to TCP/UDP port 22 (SSH) [High]
+           https://docs.fugue.co/FG_R00085.html
+
+  [1]: WebAppSG
+       in c3-app.yml:45:3
+
+Found one problem.
+
+(base) mijumoto@MacBook-Pro starter % regula run c3-app.yml
+
+No problems found. Stellar.

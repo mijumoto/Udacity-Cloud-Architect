@@ -1,0 +1,12 @@
+Identify 2-3 changes that can be made to our environment to prevent an SSH brute force attack from the internet.
+
+- Instance level: disable the ssh service
+- Instance level: restrict ssh failed attempts to 3 failures, this can be done in the configuration for ssh
+- Instance level: disable ssh password and use a key file to log in
+- Security group: block ingress/egress traffic to port 22
+- Only allow access to port 22 from certain ips (developer machines, bastion host, etc..)
+
+Neither instance should have had access to the secret recipes bucket; even in the instance that API credentials were compromised how could we have prevented access to sensitive data?
+
+- Setup a user managed key for encrypting the bucket data, this way even if an attacker has access they wont be able to do anything with it.
+- Restricting access to the bucket only to the priviledge user roles

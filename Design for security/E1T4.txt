@@ -1,0 +1,7 @@
+S3 data is not encrypted at rest - data should be encrypted on the server side as it is transparent to the AWS user and requires no extra effort
+S3 buckets should have all `block public access` options enabled - since the bucket is not holding a web application, it should have all access restricted only to the specific IAM roles for the instance
+S3 bucket policies should only allow requests that use HTTPS
+The policy InstanceRolePolicy-C3 allows access to all buckets and permits all operations on them. This conflicts with the least priviledge principle.
+WebAppSG allows incoming and outgoing traffic to port 22 which shouldn't be opened. Access to instances should be provisioned through AWS session manager or not provide access at all.
+VPC security group rules should not permit ingress from '0.0.0.0/0' to TCP/UDP port 22 (SSH) - access should be restricted to one ip
+S3 access should be limited to priviledged business users and WebAppSG

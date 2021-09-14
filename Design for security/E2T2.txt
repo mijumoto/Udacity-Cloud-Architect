@@ -1,0 +1,20 @@
+AWS config
+----------
+
+For AWS config there are good annotations and descriptions on what the problem is and how to fix it. There is also an auto-remediate feature that with just a click of a button will fix the issues.
+
+If a remediation fails or breaks anything there is also a rollback for remediations.
+
+
+Security Hub - CIS AWS Foundations Benchmark v1.2.0
+---------------------------------------------------
+
+For these there is no automated fix actions so the AWS admin has to go over each of the issues to remediate them.
+
+For this vulnerability: Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
+The AWS admin has to click on it to then see the list of security groups that are affected. After the manual remediation is applied then the issue can be marked as resolved for each security group.
+
+Amazon Inspector
+----------------
+
+All the Inspector issues refer to the EC2 instance for the web service listening on all ports. These can be easily fixed by restricting incoming traffic to ports 80 and 443.

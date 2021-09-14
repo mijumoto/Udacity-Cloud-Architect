@@ -1,0 +1,38 @@
+Identify tools that will allow you to do the following: .  
+a. Scan infrastructure as code templates.
+
+Checkov
+TFLint
+Regula
+
+b. Scan AMI’s or containers for OS vulnerabilities.
+
+snyk
+clair
+
+c. Scan an AWS environment for cloud configuration vulnerabilities.
+
+Amazon Inspector
+Skyhigh
+Qualys
+
+For each tool - identify an example compliance violation or vulnerability which it might expose.
+
+a. Scan infrastructure as code templates.
+
+ex: VPC vulnerabilities: VPC security group rules should not permit ingress from '0.0.0.0/0' to TCP/UDP port 22 (SSH) [High]
+
+b. Scan AMI’s or containers for OS vulnerabilities.
+
+ex: Vulnerabilities on installed programs
+
+ ✗ High severity vulnerability found in perl
+  Description: Integer Overflow or Wraparound
+  Info: https://snyk.io/vuln/SNYK-DEBIAN10-PERL-570802
+  Introduced through: git@1:2.20.1-2+deb10u3, meta-common-packages@meta
+
+c. Scan an AWS environment for cloud configuration vulnerabilities.
+
+ex: filesystem permissions compliance check
+
+Instance i-0748bb6c3dc861e12 is not compliant with rule 6.2.8 Ensure users home directories permissions are 750 or more restrictive
